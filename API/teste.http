@@ -1,0 +1,18 @@
+### Requisição para a raiz
+GET http://localhost:5011/
+
+### Listar todos os produtos
+GET http://localhost:5011/api/produto/listar
+
+### Buscar produto por nome
+GET http://localhost:5011/api/produto/buscar
+
+### Cadastrar o produto
+POST http://localhost:5011/api/produto/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Notebook",
+    "quantidade" : 123,
+    "preco" : 85.5
+}
